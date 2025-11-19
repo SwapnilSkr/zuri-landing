@@ -32,8 +32,8 @@ export function DropAlert() {
     const data = await response.json();
     setResult(
       data.success
-        ? "Success! Watch your inbox for the drop."
-        : `Something went wrong. Try again.}`
+        ? "Success! You're on the list."
+        : `Something went wrong. Try again.`
     );
     setIsSubmitting(false);
     if (data.success) {
